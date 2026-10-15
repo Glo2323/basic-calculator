@@ -24,13 +24,25 @@ public class BasicCalculator {
         //store the answer for the user
         int secondNumber = theScanner.nextInt();
 
+        theScanner.nextLine();
+
 
         //ask the user what operation they want to use
+        System.out.print("""
+                Possible calculations:
+                (A)dd
+                (S)ubtract
+                (M)ultiply
+                (D)ivide
+                Please select an option:
+                """);
 
         //store the user's choice
-
+        String operation = theScanner.nextLine();
 
         //answer the equation
+        int product = firstNumber * secondNumber;
+        System.out.println(firstNumber + " * " + secondNumber  + "= " + product);
 
 
     }

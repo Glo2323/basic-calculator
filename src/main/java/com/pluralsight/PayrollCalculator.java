@@ -30,12 +30,11 @@ public class PayrollCalculator {
         double payRate = messiScanner.nextDouble();
 
 
-        //display employee' names and their
+        //display employee's names and their gross pay
 
+        double grossPay = hoursWorked * payRate;
 
-
-
-
+        System.out.printf("Your name is %s and your gross pay is %.2f", name, grossPay);
 
 
 

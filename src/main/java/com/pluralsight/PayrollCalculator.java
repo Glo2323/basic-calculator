@@ -11,12 +11,23 @@ public class PayrollCalculator {
 
 
         //their name
+        System.out.print("What is your name: ");
+
+
+        String name = messiScanner.nextLine();
 
 
         //their hours worked
+        System.out.print("How many hours worked: ");
+
+        double hoursWorked = messiScanner.nextDouble();
 
 
         //their pay rate
+
+        System.out.print("What's your pay rate: ");
+
+        double payRate = messiScanner.nextDouble();
 
 
         //display employee' names and their

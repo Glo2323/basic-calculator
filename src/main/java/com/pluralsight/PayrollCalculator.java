@@ -32,9 +32,19 @@ public class PayrollCalculator {
 
         //display employee's names and their gross pay
 
-        double grossPay = hoursWorked * payRate;
+        double grossPay;
+
+        if (hoursWorked > 40) {
+             grossPay = hoursWorked * payRate * 1.5;
+        }
+        else {  grossPay = hoursWorked * payRate;
+        }
 
         System.out.printf("Your name is %s and your gross pay is %.2f", name, grossPay);
+
+
+
+
 
 
 
